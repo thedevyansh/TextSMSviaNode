@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send SMS using Node</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+
+    <style>
+        body {
+            background-color: #ffd1dc;
+        }
+
+        .container {
+            display: block;
+            margin: auto;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h4>Send SMS using Node.js</h4>
+        <input type="tel" id="number" name="number" placeholder="Enter contact number">
+        <input type="text" id="msg" name="message" placeholder="Type the message"><br>
+        <input type="button" class="button button-primary" value="Send SMS">
+
+        <p class="reveal"></p>
+    </div>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
